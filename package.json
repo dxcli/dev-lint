@@ -6,11 +6,14 @@
   "bugs": "https://github.com/oclif/tslint/issues",
   "dependencies": {
     "tslint-eslint-rules": "^5.4.0",
-    "tslint-xo": "^0.9.0"
+    "tslint-xo": "^0.16.0"
   },
   "devDependencies": {
-    "tslint": "^5.11.0",
-    "typescript": "^3.1.3"
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint": "^5.16.0",
+    "tslint": "^5.17.0",
+    "typescript": "^3.3.3"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -26,7 +29,9 @@
   "main": "tslint.json",
   "repository": "oclif/tslint",
   "scripts": {
-    "test": "tslint -p ."
+    "test": "tslint -p .",
+    "jslint": "eslint . --ext .js",
+    "tslint": "eslint . --ext .ts"
   },
   "types": "lib/index.d.ts"
 }
