@@ -29,9 +29,7 @@
   "main": "tslint.json",
   "repository": "oclif/tslint",
   "scripts": {
-    "test": "tslint -p .",
-    "jslint": "eslint . --ext .js",
-    "tslint": "eslint . --ext .ts"
+    "test": "eslint --ext .js , .ts"
   },
   "types": "lib/index.d.ts"
 }
