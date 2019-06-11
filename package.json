@@ -29,7 +29,7 @@
   "main": "tslint.json",
   "repository": "oclif/tslint",
   "scripts": {
-    "test": "eslint --ext .js , .ts"
+    "test": "eslint . --ext .js,.ts"
   },
   "types": "lib/index.d.ts"
 }

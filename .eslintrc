@@ -29,11 +29,12 @@
     "prefer-const":"off",
     "prefer-template":"off",
     "promise-function-async":"off",
-    "quotes": ["error","single", { "avoidEscape": true, "no-restricted-syntax": "TemplateLiteral" } ],
+    "quotes": ["error","single", { "avoidEscape": true} ],
     "@typescript-eslint/restrict-plus-operands":"off",
     "semi":"off",
     "@typescript-eslint/semi": ["error","never"],
     "@typescript-eslint/member-delimiter-style":"off",
-    "camelcase":"off"
+    "camelcase":"off",
+    "no-restricted-syntax":["error", { "selector": "TemplateLiteral" }]
   }
 }
